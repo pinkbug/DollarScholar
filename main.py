@@ -1,5 +1,9 @@
 import streamlit as st
+import openai
+import os
 
+
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 class Student:
     def _init_(self,first_name,last_name,age,university):
         self.first_name=first_name
@@ -16,7 +20,6 @@ st.set_page_config(
     page_title = "Financial Literacy",
     menu_items = {
         'Get Help' : 'https://docs.streamlit.io/',
-        'Report a bug' : '',
         'About' : '# Welcome to FIU Financial Literacy'
     }
 )
@@ -26,6 +29,7 @@ st.header("2023 Shell Hackers")
 
 st.subheader("Personal Info")
 
+#Collecting personal information
 first_name = st.text_input('First Name')
 last_name= st.text_input('Last Name')
 university= st.text_input('University')
@@ -36,3 +40,7 @@ if first_name and last_name and university and age:
 
 student=Student(first_name,last_name,age,university)
 student.display_info()
+
+#Chatbot with gameified financial learning
+
+st.subheader("Financial Queries with ChatGPT")
