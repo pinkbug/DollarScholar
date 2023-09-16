@@ -1,0 +1,2 @@
+# DollarScholar
+For ShellHacks
