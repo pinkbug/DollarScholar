@@ -17,20 +17,6 @@ class Student:
        return(f"Student Name:{self.first_name}{self.last_name}"
               f"Age: {self.age}"
               f"University: {self.university}")
-
-st.set_page_config(
-    page_title = "Financial Literacy",
-    menu_items = {
-        'Get Help' : 'https://docs.streamlit.io/',
-        'About' : '# Welcome to FIU Financial Literacy'
-    }
-)
-
-st.title("Learning Financial Literacy")
-st.header("2023 Shell Hackers")
-
-st.subheader("Personal Info")
-
 #Collecting personal information
 
 # st.write(f"Student Name: {self.first_name} {self.last_name} ")
@@ -39,8 +25,23 @@ st.subheader("Personal Info")
 
 logo_path="DollarLogo.png"
 logo=st.image(logo_path,width=500)
-st.title("Dollar $cholar")
-st.header("Don't just earn. Let it return.")
+st.title("Mission Statement")
+st.text("""
+        Welcome to Dollar Scholar, a revolutionary finance app designed with 
+        first-generation individuals in mind. Our mission is to empower you 
+        with the knowledge, skills, and confidence needed to build a strong 
+        foundation of financial literacy and achieve long-term prosperity.
+        We have to learn how to make our money work for us.
+        """)
+
+st.title("About")
+st.text("""
+        As a first-generation individual, navigating the complexities of 
+        finance can feel overwhelming. WealthBegin is here to simplify 
+        this journey for you. We understand the unique challenges and 
+        aspirations of first-generation communities and strive to bridge 
+        the knowledge gap, making finance accessible and understandable for all.
+        """)
 
 st.subheader("Personal Info")
 variable=0
