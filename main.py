@@ -161,7 +161,7 @@ def chat_section():
 
 # Main
 
-logo_path = "DollarLogo2.png"
+logo_path = "DollarLogo.png"
 logo = st.image(logo_path, width=500)
 
 #new page config option
