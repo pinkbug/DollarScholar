@@ -37,12 +37,13 @@ st.subheader("Personal Info")
 # st.write(f"Age: {self.age}")
 # st.write(f"University: {self.university}")
 
-logo_path="DollarLogo.png"
+logo_path="DollarScholar/DollarLogo.png"
 logo=st.image(logo_path,width=500)
 st.title("Dollar $cholar")
 st.header("Don't just earn. Let it return.")
 
 st.subheader("Personal Info")
+variable=0
 
 first_name = st.text_input('First Name')
 last_name= st.text_input('Last Name')
