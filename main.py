@@ -37,7 +37,7 @@ st.subheader("Personal Info")
 # st.write(f"Age: {self.age}")
 # st.write(f"University: {self.university}")
 
-logo_path="DollarScholar/DollarLogo.png"
+logo_path="DollarLogo.png"
 logo=st.image(logo_path,width=500)
 st.title("Dollar $cholar")
 st.header("Don't just earn. Let it return.")
